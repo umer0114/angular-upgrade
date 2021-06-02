@@ -2,9 +2,6 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
-declare var angular: angular.IAngularStatic;
-import { downgradeInjectable } from '@angular/upgrade/static';
-
 export interface PhoneData {
   name: string;
   snippet: string;
@@ -21,24 +18,3 @@ export class Phone {
     return this.http.get<PhoneData>(`phones/${id}.json`);
   }
 }
-
-angular.module('core.phone')
-  .factory('phone', downgradeInjectable(Phone));
-
-/*
-'use strict';
-
-angular.
-  module('core.phone').
-  factory('Phone', ['$resource',
-    function($resource: angular.resource.IResourceService) {
-      return $resource('phones/:phoneId.json', {}, {
-        query: {
-          method: 'GET',
-          params: {phoneId: 'phones'},
-          isArray: true
-        }
-      });
-    }
-  ]);
-*/

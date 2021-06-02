@@ -8,7 +8,8 @@ The application relies upon various JS libraries, such as AngularJS and jQuery, 
 
 `npm install`
 
-The application is a hybrid of Angular and AngularJs and relies on typescript. For typescript compilation run: 
+The application is a hybrid of Angular and AngularJs and relies on typescript. For typescript compilation run:
+
 `npm run tsc`
 
 This will also download the AngularJS files needed for the current step of the tutorial and copy them to app/lib.

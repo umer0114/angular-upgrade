@@ -1,4 +1,5 @@
 'use strict';
+let angular;
 angular.
     module('phonecatApp').
     animation('.phone', function phoneAnimationFactory() {
