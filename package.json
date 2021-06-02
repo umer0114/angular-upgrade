@@ -6,14 +6,37 @@
   "repository": "https://github.com/angular/angular-phonecat",
   "license": "MIT",
   "dependencies": {
+    "@angular/common": "^8.2.8",
+    "@angular/compiler": "^8.2.8",
+    "@angular/core": "^8.2.8",
+    "@angular/forms": "^8.2.8",
+    "@angular/http": "~7.2.15",
+    "@angular/platform-browser": "^8.2.8",
+    "@angular/platform-browser-dynamic": "^8.2.8",
+    "@angular/router": "^8.2.8",
+    "@angular/upgrade": "^8.2.8",
     "angular": "1.7.x",
     "angular-animate": "1.7.x",
+    "angular-in-memory-web-api": "~0.9.0",
     "angular-resource": "1.7.x",
     "angular-route": "1.7.x",
     "bootstrap": "3.3.x",
-    "jquery": "3.3.x"
+    "core-js": "^2.5.3",
+    "jquery": "3.3.x",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^6.5.3",
+    "systemjs": "0.19.40",
+    "zone.js": "^0.10.2"
   },
   "devDependencies": {
+    "@types/angular": "^1.6.56",
+    "@types/angular-animate": "^1.5.10",
+    "@types/angular-cookies": "^1.4.5",
+    "@types/angular-mocks": "^1.7.0",
+    "@types/angular-resource": "^1.5.15",
+    "@types/angular-route": "^1.7.0",
+    "@types/angular-sanitize": "^1.7.0",
+    "@types/jasmine": "^3.4.1",
     "angular-mocks": "1.7.x",
     "cpx": "^1.5.0",
     "http-server": "^0.11.1",
@@ -22,7 +45,8 @@
     "karma-chrome-launcher": "^2.2.0",
     "karma-firefox-launcher": "^1.1.0",
     "karma-jasmine": "^1.1.2",
-    "protractor": "^5.4.1"
+    "protractor": "^5.4.1",
+    "typescript": "^3.6.3"
   },
   "scripts": {
     "postinstall": "npm run copy-libs",
@@ -30,13 +54,15 @@
     "postupdate-deps": "npm run copy-libs",
     "copy-libs": "cpx \"node_modules/{angular,angular-*,bootstrap/dist,jquery/dist}/**/*\" app/lib -C",
     "prestart": "npm install",
-    "start": "http-server ./app -a localhost -p 8000 -c-1",
+    "start": "http-server ./ -a localhost -p 8000 -c-1",
     "pretest": "npm install",
     "test": "karma start karma.conf.js",
     "test-single-run": "npm test -- --single-run",
     "preupdate-webdriver": "npm install",
     "update-webdriver": "webdriver-manager update",
     "preprotractor": "npm run update-webdriver",
-    "protractor": "protractor e2e-tests/protractor.conf.js"
+    "protractor": "protractor e2e-tests/protractor.conf.js",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w"
   }
 }

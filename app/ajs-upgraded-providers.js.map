@@ -1,0 +1,1 @@
+{"version":3,"file":"ajs-upgraded-providers.js","sourceRoot":"","sources":["ajs-upgraded-providers.ts"],"names":[],"mappings":";;;;;;;;;;;IAAA,MAAsB,WAAW;KAE9B;IAFH,kCAEG;IAED,SAAgB,kBAAkB,CAAC,CAAM;QACvC,OAAO,CAAC,CAAC,GAAG,CAAC,cAAc,CAAC,CAAC;IAC/B,CAAC;IAFD,gDAEC;IAEY,QAAA,mBAAmB,GAAG;QACjC,OAAO,EAAE,WAAW;QACpB,UAAU,EAAE,kBAAkB;QAC9B,IAAI,EAAE,CAAC,WAAW,CAAC;KACpB,CAAC"}
