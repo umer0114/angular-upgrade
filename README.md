@@ -1,23 +1,28 @@
-<b>Development with angular-phonecat</b>
+<b>AngularJS to Angular Migration using phone-cat project</b>
 
-The following docs describe how you can test and develop this application further.
+This is a 3-stepped process of migrating an AngularJS app completely to Angular. The steps are as follows:
+1. Clone Angular phone-cat
+2. Hybrid application using ngUpgrade
+3. Complete removal of AngularJS
+
+The instructions and steps followed over here are from the offocial Angular upgrade guide: https://angular.io/guide/upgrade
 
 <b>Installing Dependencies</b>
 
-The application relies upon various JS libraries, such as AngularJS and jQuery, and Node.js tools, such as Karma and Protractor. You can install these by running:
+The application relies upon various JS libraries, such as AngularJS/Angular/Jquery etc. You can install these by running:
 
 `npm install`
+
+<b>Compilation</b>
 
 The application is a hybrid of Angular and AngularJs and relies on typescript. For typescript compilation run:
 
 `npm run tsc`
 
-This will also download the AngularJS files needed for the current step of the tutorial and copy them to app/lib.
+<b>Execution</b>
 
-Most of the scripts described below will run this automatically but it doesn't do any harm to run it whenever you like.
+This application relies on http-server. You can run it using:
 
-Note copying the AngularJS files from node_modules to app/lib makes it easier to serve the files by a web server.
+`npm start`
 
-Running the Application during Development
-Run npm start.
 Navigate your browser to http://localhost:8000/ to see the application running.
